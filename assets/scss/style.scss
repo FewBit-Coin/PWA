@@ -1,0 +1,38 @@
+@use 'variables' as vars;
+
+* {
+    text-align: initial;
+}
+
+::selection {
+    color: $selection_color;
+    background: $selection_background;
+    border-radius: 20%;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+.Vue-Toastification__container {
+    direction: ltr !important;
+}
+
+// code {
+//     padding: 1px 6px;
+//     background-color: #392b05;
+//     border-radius: 4px;
+//     display: inline-block;
+// }
+
+blockquote {
+    display: block;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+pre {
+    margin-bottom: 30px !important;
+}
