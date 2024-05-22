@@ -153,9 +153,14 @@ onNuxtReady(() => {
 							target="_blank" nofollow>Chinese</a>
 							<a title="How to mine FBIT in Russian"
 							aria-label="How to mine FBIT in Russian"
-							class="text-orange-500 dark:hover:text-light_blue-50 hover:text-dark_blue-900 flex justify-start items-center"
-							href="https://www.youtube.com/watch?v=xumRTxJvaDU&t=231s"
+							class="text-orange-500 dark:hover:text-light_blue-50 hover:text-dark_blue-900 flex justify-start items-center mr-3"
+							href="https://www.youtube.com/watch?v=xumRTxJvaDU"
 							target="_blank" nofollow>Russian</a>
+							<a title="How to mine FBIT in Russian"
+							aria-label="How to mine FBIT in Russian"
+							class="text-orange-500 dark:hover:text-light_blue-50 hover:text-dark_blue-900 flex justify-start items-center"
+							href="https://youtu.be/AeN-9iTUqBI"
+							target="_blank" nofollow>Spanish</a>
 						</div>
 						<code lang="js">Thank you for your contributions! ❤️</code>
 					</p>
