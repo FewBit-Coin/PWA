@@ -94,7 +94,7 @@ onNuxtReady(() => {
 					>FewBit is a cryptocurrency designed with specific parameters to ensure efficient and fair distribution. It has a total supply of 210,000,000 FBIT, with a smartnode collateral requirement of 6,000 FBIT. The block time is approximately 150 seconds, providing a steady pace for transaction confirmations.</p>
 					<p
 						class="text-base text-slate-400 leading-7 mt-2"
-					>Each block reward is 50 FBIT, distributed with 5% going to the developers, 65% to smartnodes, and 35% to miners. Notably, if the smartnodes are not yet activated, miners receive a significantly higher reward of 95%. FewBit utilizes the GhostRider algorithm, which enhances its security and operational efficiency, making it a promising digital currency in the crypto space.</p>
+					>Each block reward is 50 FBIT, distributed with 5% going to the developers, 65% to smartnodes, and 30% to miners. Notably, if the smartnodes are not yet activated, miners receive a significantly higher reward of 95%. FewBit utilizes the GhostRider algorithm, which enhances its security and operational efficiency, making it a promising digital currency in the crypto space.</p>
 
 
 					<h4 class="text-2xl mt-6">Download Wallet</h4>
