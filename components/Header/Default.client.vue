@@ -76,6 +76,11 @@ onUnmounted(() => {
 						<li v-if="!auth.isLoggedIn">
 							<NuxtLink
 								class="dark:hover:text-light_blue-50 hover:text-dark_blue-900 p-1"
+								to="https://fewnode.com"
+								target="_blank"
+							>{{ $t('content.signIn') }}</NuxtLink>
+							<NuxtLink
+								class="dark:hover:text-light_blue-50 hover:text-dark_blue-900 p-1"
 								:to="localePath('/login')"
 							>{{ $t('content.signIn') }}</NuxtLink>
 						</li>
