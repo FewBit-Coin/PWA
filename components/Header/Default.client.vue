@@ -73,27 +73,12 @@ onUnmounted(() => {
 								target="_blank"
 							>{{ $t('content.pools') }}</NuxtLink>
 						</li>
-						<li v-if="!auth.isLoggedIn">
+						<li>
 							<NuxtLink
 								class="dark:hover:text-light_blue-50 hover:text-dark_blue-900 p-1"
 								to="https://fewnode.com"
 								target="_blank"
 							>{{ $t('content.signIn') }}</NuxtLink>
-						</li>
-						<li v-if="auth.isLoggedIn">
-							<NuxtLink
-								class="dark:hover:text-light_blue-50 hover:text-dark_blue-900 p-1"
-								:to="localePath('/dashboard')"
-							>{{ $t('content.dashboard') }}</NuxtLink>
-						</li>
-						<li v-if="auth.isLoggedIn">
-							<button
-								class="dark:hover:text-light_blue-50 hover:text-dark_blue-900 p-1"
-								@click="handleLogout"
-							>
-								{{
-								$t('content.logout') }}
-							</button>
 						</li>
 					</ul>
 
@@ -142,34 +127,38 @@ onUnmounted(() => {
 										<Icon name="MdiArrowTopRight" class="w-4 h-4 rtl:-rotate-90" />
 									</NuxtLink>
 								</li>
-								<li v-if="!auth.isLoggedIn" class="w-full">
+								<li class="w-full">
 									<NuxtLink
 										@click="showingNavigationDropdown = false"
 										class="dark:hover:text-light_blue-50 hover:text-dark_blue-900 p-1 flex justify-between items-center"
-										:to="localePath('/login')"
+										to="https://explorer.fewbit.net/"
+										target="_blank"
+									>
+										<span>{{ $t('content.explorer') }}</span>
+										<Icon name="MdiArrowTopRight" class="w-4 h-4 rtl:-rotate-90" />
+									</NuxtLink>
+								</li>
+								<li class="w-full">
+									<NuxtLink
+										@click="showingNavigationDropdown = false"
+										class="dark:hover:text-light_blue-50 hover:text-dark_blue-900 p-1 flex justify-between items-center"
+										to="https://miningpoolstats.stream/fewbit"
+										target="_blank"
+									>
+										<span>{{ $t('content.pools') }}</span>
+										<Icon name="MdiArrowTopRight" class="w-4 h-4 rtl:-rotate-90" />
+									</NuxtLink>
+								</li>
+								<li class="w-full">
+									<NuxtLink
+										@click="showingNavigationDropdown = false"
+										class="dark:hover:text-light_blue-50 hover:text-dark_blue-900 p-1 flex justify-between items-center"
+										to="https://fewnode.com"
+										target="_blank"
 									>
 										<span>{{ $t('content.signIn') }}</span>
 										<Icon name="MdiArrowTopRight" class="w-4 h-4 rtl:-rotate-90" />
 									</NuxtLink>
-								</li>
-								<li v-if="auth.isLoggedIn" class="w-full">
-									<NuxtLink
-										@click="showingNavigationDropdown = false"
-										class="dark:hover:text-light_blue-50 hover:text-dark_blue-900 p-1 flex justify-between items-center"
-										:to="localePath('/dashboard')"
-									>
-										<span>{{ $t('content.dashboard') }}</span>
-										<Icon name="MdiArrowTopRight" class="w-4 h-4 rtl:-rotate-90" />
-									</NuxtLink>
-								</li>
-								<li v-if="auth.isLoggedIn" class="w-full">
-									<button
-										class="w-full dark:hover:text-light_blue-50 hover:text-dark_blue-900 p-1 flex justify-between items-center"
-										@click="handleLogout"
-									>
-										<span>{{ $t('content.logout') }}</span>
-										<Icon name="MdiArrowTopRight" class="w-4 h-4 rtl:-rotate-90" />
-									</button>
 								</li>
 								<li class="w-full">
 									<hr class="opacity-20 my-1" />
