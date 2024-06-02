@@ -201,7 +201,7 @@ onNuxtReady(() => {
 					<p class="text-base text-slate-400 leading-7 mt-2 mb-5">
 						
 						<table class="w-full mb-5">
-							<caption class="caption-top">
+							<caption class="caption-top mb-3">
 								The collateral needed to create a SmartNode on the blockchain is established as follows:</caption>
 							<thead>
 								<tr>
@@ -276,8 +276,17 @@ onNuxtReady(() => {
 						class="text-base text-slate-400 leading-7 mt-2"
 					>Staking rewards incentivize long-term holding, fostering loyalty and commitment. Staking participants often gain voting rights in network governance, promoting a sustainable ecosystem based on community consensus.</p>
 					<p
-						class="text-base text-slate-400 leading-7 mt-2"
+						class="text-base text-slate-400 leading-7 mt-2 mb-3"
 					>Additionally, the staking system optimizes resource usage and enhances network performance, making the coin more attractive to investors and new users, fostering stable, sustainable development.</p>
+					<p class="text-base text-slate-400 leading-7 mt-2 mb-3 flex items-center">
+						<img src="https://fewnode.com/storage/assets/logo.png?id=nZKBV" width="40" class="pr-3" /> 
+						<NuxtLink class="text-orange-500 dark:hover:text-light_blue-50 hover:text-dark_blue-900" to="https://fewnode.com/main/stake/plans">
+							<span>Create Wallet & Start Staking</span>
+						</NuxtLink>
+					</p>
+					<p>
+						<img src="~/assets/wallet.png" />
+					</p>
 				</div>
 			</div>
 		</div>
